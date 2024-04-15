@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono";
+}
+
+main {
+  background-color: #c5e4e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .logo > img {
+  margin: 50px auto 40px auto;
+}
+main .canvas {
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+  background-color: white;
+}
+main .canvas .bill {
+  padding: 32px;
+}
+main .canvas .bill h2 {
+  color: #5e7a7d;
+  font-size: 16px;
+  margin: 5px 0;
+}
+main .canvas .bill > form {
+  position: relative;
+}
+main .canvas .bill > form input {
+  text-align: right;
+  font-weight: bold;
+  color: #00494d;
+  font-size: 24px;
+  border-radius: 5px;
+  height: 48px;
+  background-color: #f4fafa;
+  border: none;
+  width: 100%;
+}
+main .canvas .bill > form img {
+  position: absolute;
+  top: 44px;
+  left: 20px;
+}
+main .canvas .bill .tip ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .canvas .bill .tip ul li {
+  margin: 8px 0;
+}
+main .canvas .bill .tip ul li button {
+  font-size: 24px;
+  background-color: #00494d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+}
+main .canvas .bill .tip ul Li form input {
+  border: none;
+  color: #7f9c9f;
+  background-color: #f4fafa;
+  font-size: 24px;
+  width: 135px;
+  height: 50px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
