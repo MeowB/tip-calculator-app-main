@@ -11,6 +11,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 main .logo > img {
   margin: 50px auto 40px auto;
@@ -23,15 +24,15 @@ main .canvas {
 main .canvas .bill {
   padding: 32px;
 }
-main .canvas .bill h2 {
+main .canvas .bill .wrapper h2 {
   color: #5e7a7d;
   font-size: 16px;
   margin: 5px 0;
 }
-main .canvas .bill > form {
+main .canvas .bill .wrapper > form {
   position: relative;
 }
-main .canvas .bill > form input {
+main .canvas .bill .wrapper > form input {
   text-align: right;
   font-weight: bold;
   color: #00494d;
@@ -42,21 +43,24 @@ main .canvas .bill > form input {
   border: none;
   width: 100%;
 }
-main .canvas .bill > form img {
+main .canvas .bill .wrapper > form img {
   position: absolute;
   top: 44px;
   left: 20px;
 }
-main .canvas .bill .tip ul {
+main .canvas .bill .wrapper .tip {
+  margin-top: 32px;
+}
+main .canvas .bill .wrapper .tip ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-main .canvas .bill .tip ul li {
+main .canvas .bill .wrapper .tip ul li {
   margin: 8px 0;
 }
-main .canvas .bill .tip ul li button {
+main .canvas .bill .wrapper .tip ul li button {
   font-size: 24px;
   background-color: #00494d;
   color: white;
@@ -65,7 +69,7 @@ main .canvas .bill .tip ul li button {
   width: 150px;
   height: 50px;
 }
-main .canvas .bill .tip ul Li form input {
+main .canvas .bill .wrapper .tip ul Li form input {
   border: none;
   color: #7f9c9f;
   background-color: #f4fafa;
@@ -74,6 +78,109 @@ main .canvas .bill .tip ul Li form input {
   height: 50px;
   text-align: right;
   padding-right: 15px;
+  font-weight: bold;
+}
+main .canvas .bill .wrapper .people {
+  margin-top: 32px;
+  position: relative;
+}
+main .canvas .bill .wrapper .people input {
+  width: 100%;
+  text-align: right;
+  height: 48px;
+  background-color: #f4fafa;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 24px;
+}
+main .canvas .bill .wrapper .people img {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+}
+main .canvas .bill .results {
+  margin-top: 32px;
+  border-radius: 15px;
+  background-color: #00494d;
+  padding: 24px;
+}
+main .canvas .bill .results .tip-result, main .canvas .bill .results .total {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+main .canvas .bill .results .tip-result > p, main .canvas .bill .results .total > p {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+main .canvas .bill .results .tip-result > p span, main .canvas .bill .results .total > p span {
+  font-size: 13px;
+  color: #7f9c9f;
+}
+main .canvas .bill .results .tip-result p:last-child span, main .canvas .bill .results .total p:last-child span {
+  font-size: 32px;
+  color: #26c0ab;
+}
+main .canvas .bill .results button {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  color: #00494d;
+  background-color: #26c0ab;
+  margin-top: 32px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: #c5e4e7;
+}
+
+.attribution a {
+  color: #5e7a7d;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 670px) {
+  main {
+    justify-content: center;
+  }
+  main .logo > img {
+    margin: 0;
+    margin-bottom: 90px;
+  }
+  main .canvas {
+    max-width: 920px;
+    border-radius: 25px;
+  }
+  main .canvas .bill {
+    display: flex;
+    padding: 0;
+  }
+  main .canvas .bill .results, main .canvas .bill .wrapper {
+    margin: 32px;
+  }
+  main .canvas .bill .results {
+    width: 400px;
+  }
+  main .canvas .bill .results button {
+    margin-top: 140px;
+  }
+
+  .attribution {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+    background-color: #c5e4e7;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

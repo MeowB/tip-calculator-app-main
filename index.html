@@ -9,11 +9,6 @@
   
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -24,39 +19,41 @@
 
 		<div class="canvas">
 			<div class="bill">
-				<form action="#">
-					<h2>Bill</h2>
-					<input type="number" name="bill" placeholder="0.00">
-					<img src="./images/icon-dollar.svg" alt="dollar icon">
-				</form>
-				<div class="tip">
-					<h2>Select Tip %</h2>
-					<ul>
-						<li><button>5%</button></li>
-						<li><button>10%</button></li>
-						<li><button>15%</button></li>
-						<li><button>25%</button></li>
-						<li><button>50%</button></li>
-						<li>
-							<form action="#">
-								<input type="text" name="custom" placeholder="Custom">
-							</form>
-						</li>
-					</ul>
-				</div>
-				<div class="people">
-					<h2>Number of People</h2>
-					<input type="number" name="number-of-people" placeholder="5">
-					<img src="images/icon-person.svg" alt="person icon">
+				<div class="wrapper">
+					<form action="#">
+						<h2>Bill</h2>
+						<input type="number" name="bill" placeholder="0.00">
+						<img src="./images/icon-dollar.svg" alt="dollar icon">
+					</form>
+					<div class="tip">
+						<h2>Select Tip %</h2>
+						<ul>
+							<li><button>5%</button></li>
+							<li><button>10%</button></li>
+							<li><button>15%</button></li>
+							<li><button>25%</button></li>
+							<li><button>50%</button></li>
+							<li>
+								<form action="#">
+									<input type="text" name="custom" placeholder="Custom">
+								</form>
+							</li>
+						</ul>
+					</div>
+					<div class="people">
+						<h2>Number of People</h2>
+						<input type="number" name="number-of-people" placeholder="5">
+						<img src="images/icon-person.svg" alt="person icon">
+					</div>
 				</div>
 
 				<div class="results">
 					<div class="tip-result">
-						<p>Tip Amount <br>/ person</p>
+						<p>Tip Amount <br><span>/ person</span></p>
 						<p><span>$0.00</span></p>
 					</div>
 					<div class="total">
-						<p>Total <br>/ person</p>
+						<p>Total <br><span>/ person</span></p>
 						<p><span>$0.00</span></p>
 					</div>
 					<button>RESET</button>

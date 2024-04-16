@@ -25,6 +25,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 100vh;
 
 	.logo > img {
 		margin: 50px auto 40px auto;
@@ -37,68 +38,197 @@ main {
 		.bill {
 			padding: 32px;
 
-			h2 {
-				color: $c-Dark-grayish-cyan;
-				font-size: 16px;
-				margin: 5px 0;
-			}
+			.wrapper {
 
-			> form {
-				position: relative;
-				
-				input {
-					text-align: right;
-					font-weight: bold;
-					color: $c-Very-dark-cyan;
-					font-size: 24px;
-					border-radius: 5px;
-					height: 48px;
-					background-color: $c-Very-light-grayish-cyan;
-					border: none;
-					width: 100%;
+
+				h2 {
+					color: $c-Dark-grayish-cyan;
+					font-size: 16px;
+					margin: 5px 0;
+				}
+	
+				> form {
+					position: relative;
 					
-				}
-
-				img {
-					position: absolute;
-					top: 44px;
-					left: 20px;
-				}
-			}
-
-			.tip {
-				ul {
-					list-style: none;
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: space-between;
-
-					li {
-						margin: 8px 0;
-					}
-
-					li button {
+					input {
+						text-align: right;
+						font-weight: bold;
+						color: $c-Very-dark-cyan;
 						font-size: 24px;
-						background-color: $c-Very-dark-cyan;
-						color: white;
+						border-radius: 5px;
+						height: 48px;
+						background-color: $c-Very-light-grayish-cyan;
+						border: none;
+						width: 100%;
+						
+					}
+	
+					img {
+						position: absolute;
+						top: 44px;
+						left: 20px;
+					}
+				}
+	
+				.tip {
+					margin-top: 32px;
+					ul {
+						list-style: none;
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+	
+						li {
+							margin: 8px 0;
+						}
+	
+						li button {
+							font-size: 24px;
+							background-color: $c-Very-dark-cyan;
+							color: white;
+							border: none;
+							border-radius: 5px;
+							width: 150px;
+							height: 50px;
+						}
+	
+						Li form input {
+							border: none;
+							color: $c-Grayish-cyan;
+							background-color: $c-Very-light-grayish-cyan;
+							font-size: 24px;
+							width: 135px;
+							height: 50px;
+							text-align: right;
+							padding-right: 15px;
+							font-weight: bold;
+						}
+					}
+				}
+	
+				.people {
+					margin-top: 32px;
+					position: relative;
+					input {
+						width: 100%;
+						text-align: right;
+						height: 48px;
+						background-color: $c-Very-light-grayish-cyan;
 						border: none;
 						border-radius: 5px;
-						width: 150px;
-						height: 50px;
+						font-weight: bold;
+						font-size: 24px;
+					}
+	
+					img {
+						position: absolute;
+						top: 45px;
+						left: 20px;
+					}
+				}
+	
+				
+			}
+
+			.results {
+				margin-top: 32px;
+				border-radius: 15px;
+				background-color: $c-Very-dark-cyan;
+				padding: 24px;
+
+				.tip-result, .total{
+					margin-top: 20px;
+					display: flex;
+					justify-content: space-between;
+					align-items: end;
+					
+					> p {
+						font-weight: bold;
+						font-size: 16px;
+						color: $c-White;
+
+						span {
+							font-size: 13px;
+							color: $c-Grayish-cyan;
+						}
 					}
 
-					Li form input {
-						border: none;
-						color: $c-Grayish-cyan;
-						background-color: $c-Very-light-grayish-cyan;
-						font-size: 24px;
-						width: 135px;
-						height: 50px;
-						text-align: right;
-						padding-right: 15px;
+					p:last-child {
+						span {
+							font-size: 32px;
+							color: $c-strong-cyan;
+						}
 					}
+				}
+
+				button {
+					width: 100%;
+					height: 48px;
+					border-radius: 5px;
+					border: none;
+					color: $c-Very-dark-cyan;
+					background-color: $c-strong-cyan;
+					margin-top: 32px;
+					font-size: 20px;
+					font-weight: bold;
 				}
 			}
 		}
 	}
+}
+
+.attribution {
+	font-size: 11px; 
+	text-align: center; 
+	background-color: $c-Light-grayish-cyan;
+}
+.attribution a {
+	color: $c-Dark-grayish-cyan;
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 670px) {
+
+	main{
+		justify-content: center;
+
+		.logo {
+			> img {
+				margin: 0;
+				margin-bottom: 90px;
+			}
+		}
+		.canvas {
+			max-width: 920px;
+			border-radius: 25px;
+			.bill {
+				display: flex;
+				padding: 0;
+
+				.results, .wrapper{
+					margin: 32px;
+				}
+
+				.results {
+					width: 400px;
+
+					button {
+						margin-top: 140px;
+					}
+				}
+				
+			}
+		}
+
+	}
+	
+	.attribution {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		font-size: 11px;
+		text-align: center; 
+		background-color: $c-Light-grayish-cyan;
+	}
+
 }
