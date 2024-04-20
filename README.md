@@ -1,5 +1,5 @@
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://meowb.github.io/tip-calculator-app-main/)
 
 # Frontend Mentor - Tip calculator app solution
 
